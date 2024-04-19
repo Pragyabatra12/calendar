@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar with Event Manager</title>
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prevMonthBtn">&lt;</button>
+            <span id="currentMonth"></span>
+            <button id="nextMonthBtn">&gt;</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+    <div class="event-manager">
+        <h2>Add Event</h2>
+        <input type="text" id="eventName" placeholder="Event Name">
+        <input type="date" id="eventDate">
+        <button id="saveEventBtn">Save Event</button>
+    </div>
+</div>
+
+<script src="calender.js"></script>
+</body>
+</html>
